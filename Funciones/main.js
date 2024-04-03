@@ -5,9 +5,27 @@ let operacion = function (num1,num2) {
     let number2 = 20;
     let result = 100*20;
     return result;
-}
+} 
 let multiplication = operacion(100,20); 
 console.log(multiplication);
+
+
+//1 y 2 
+/* function add (){
+    let resu = 100 * 20
+    console.log(resu)
+}
+add () */
+//3 y 4
+/* function add (nu1, nu2){
+    let resu = nu1 * nu2
+    console.log(resu)
+}
+let numero1 = 100
+let numero2 = 20
+add(numero1, numero2); */
+
+
 
 //Level medium
 //1.
