@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main>
+        <section class="flex flex-col items-center justify-center">
+        <div id="cuadrado" class=" mt-5 h-32 w-32 bg-gray-400 ">
+            <p class="flex justify-center items-center h-full">Gris</p>
+        </div>
+        <button id="boton" class="mt-5 py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700  ">Cambiar</button>
+         </section>
+        <section class="flex flex-col items-center justify-center">
+        <div id="cuadrado2" class=" mt-5 h-32 w-32 bg-gray-400 ">
+            <p class="flex justify-center items-center h-full"></p>
+        </div>
+        <input id="entradaDeTexto" class="border-2 border-gray-400 mt-5" type="text">
+        <button id="botonBorrar" class="mt-5 py-2 px-4 bg-red-500 text-white font-semibold rounded-lg shadow-md hover:bg-red-600">Borrar</button>
+        </section>
+        <section class="flex flex-col items-center justify-center">
+            <h2 class="mt-4">Calculadora de IMC</h2>
+            <label for="Estatura" class="mt-5">Estatura</label>
+            <input id="estaturaUsuario" class="border-2 border-gray-400 mt-5" type="number"placeholder="Ingresa tu estatura en cm"> 
+            <label for="Peso" class="mt-5">Peso</label>
+            <input id="pesoUsuario" class="border-2 border-gray-400 mt-5" type="number" placeholder="Ingresa tu peso en kg">
+            <button id="botonIMC" class="mt-5 py-2 px-4 bg-green-500 text-white font-semibold rounded-lg shadow-md hover:bg-green-600">Calcular</button>
+            <label for="IMC" class="mt-5">Resultado</label>
+            <p class="mt-4">Su IMC es:</p>
+            <div id="resultadoImc" class="border-2 border-gray-400 mt-2 w-36 h-7 "></div>
+        </section>
+        <section>
+            <h1 class="mt-4 text-center" >Conversor de Moneda</h1>
+    <div class="flex  items-center justify-center flex-wrap">
+        <label for="montoLocal" class="mt-5 pr-4">Monto en moneda local:</label>
+        <input type="number" id="montoLocal" placeholder="Ingrese monto local" class="border-2 border-gray-400 mt-5 mr-5">
+        <p class="mt-4 pr-4">El monto en dólares es:</p>
+        <div id="resultadoConversorADolar" class="border-2 border-gray-400 mt-2 w-36 h-7 "></div>
+    </div>
+    <div class="flex  items-center justify-center flex-wrap">
+        <label for="montoDolar" class="mt-5 pr-4">Monto en dólares:</label>
+        <input type="number" id="montoDolar" placeholder="Ingrese monto en dólares" class="border-2 border-gray-400 mt-5 mr-5">
+        <p class="mt-4 pr-4">El monto en moneda local es:</p>
+        <div id="resultadoConversorALocal" class="border-2 border-gray-400 mt-2 w-36 h-7"></div>
+    </div>
+    <div class="flex  items-center justify-center flex-wrap">
+    <button id="convertirALocal" class="mt-5 mr-5 py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 ">Convertir a Moneda Local</button>
+    <button id="convertirADolar" class="mt-5 mr-5 py-2 px-4 bg-green-500 text-white font-semibold rounded-lg shadow-md hover:bg-green-600">Convertir a Dólares</button>
+    <button id="borrarEntradas" class="mt-5 py-2 px-4 bg-red-500 text-white font-semibold rounded-lg shadow-md hover:bg-red-600">Borrar</button>
+    </div>
+
+        </section>
+    </main>
+    
+    <script src="./main.js"></script>
+</body>
+</html> 
